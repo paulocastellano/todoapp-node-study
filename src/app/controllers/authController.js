@@ -116,6 +116,8 @@ router.post("/reset-password", async (req, res) => {
         .send({ error: "Token expired, generate a new one" });
 
     user.password = password;
+    user.passwordResetExpires = undefined;
+    user.passwordResetToken = undefined;
     await user.save();
 
     res.send();

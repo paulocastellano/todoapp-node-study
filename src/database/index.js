@@ -1,8 +1,7 @@
 const mongoose = require("mongoose");
 
 mongoose.connect(
-  "mongodb+srv://todoapp:GoyrnX6LSMqtciCQ@cluster0.ngfzv.mongodb.net/todoapp?retryWrites=true&w=majority",
-  {
+  "mongodb+srv://localhost/todoapp?retryWrites=true&w=majority", {
     useCreateIndex: true,
     useNewUrlParser: true,
     useUnifiedTopology: true,
